@@ -126,7 +126,7 @@ require_once 'includes/header.php';
                         <td><?= htmlspecialchars($vehicle['power']); ?> CV</td>
                     </tr>
                     <tr>
-                        <th>Consommation de carburant</th>
+                        <th>Consommation</th>
                         <td><?= htmlspecialchars($vehicle['consumption']); ?>/100km</td>
                     </tr>
                     <tr>
@@ -138,7 +138,7 @@ require_once 'includes/header.php';
                         <td><?= $vehicle['heated_seats'] ? 'Oui' : 'Non'; ?></td>
                     </tr>
                     <tr>
-                        <th>Vidange nécessaire</th>
+                        <th>Vidange</th>
                         <td><?= $vehicle['oil_change'] ? 'À faire' : 'À jour' ?></td>
                     </tr>
                     <tr>
