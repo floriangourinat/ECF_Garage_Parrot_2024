@@ -1,6 +1,6 @@
 // Initialisation de l'animation des chiffres sur la page d'accueil pour afficher de manière dynamique les statistiques telles que le pourcentage de clients satisfaits, le nombre de véhicules vendus et le nombre de services fournis
 
-// Définition des valeurs initiales des statistiques
+// Définition des valeurs initiales des statistiques 
 const satisfiedCustomers = 95; // % de clients satisfaits
 const vehiclesSold = 567; // Nombre de véhicules vendus
 const servicesProvided = 10456; // Nombre de services offerts
