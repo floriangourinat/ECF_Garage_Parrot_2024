@@ -1,4 +1,4 @@
--- Création d'une nouvelle table pour stocker les informations de contact nommée "contacts"
+-- Création d'une nouvelle table pour stocker les informations de contact nommée "contacts" 
 CREATE TABLE contacts (
   -- Un identifiant unique pour chaque contact, qui s'incrémente automatiquement
   id INT(11) NOT NULL AUTO_INCREMENT,
