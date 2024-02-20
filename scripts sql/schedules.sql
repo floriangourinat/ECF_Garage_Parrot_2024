@@ -1,4 +1,4 @@
--- Création d'une nouvelle table pour stocker les horaires d'ouverture et de fermeture nommée "schedules"
+-- Création d'une nouvelle table pour stocker les horaires d'ouverture et de fermeture nommée "schedules" 
 CREATE TABLE schedules (
   -- Un identifiant unique pour chaque créneau horaire, qui s'incrémente automatiquement.
   -- Ce champ est essentiel pour assurer l'unicité de chaque enregistrement.
