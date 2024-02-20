@@ -1,6 +1,6 @@
 /*
-Ce script JavaScript permets la manipulation des sliders à l'aide de la bibliothèque noUiSlider.
-Il permet de créer des sliders interactifs pour filtrer les données affichées sur les véhicules.
+Ce script JavaScript permets la manipulation des sliders à l'aide de la bibliothèque noUiSlider. 
+Il permet de créer des sliders interactifs pour filtrer les données affichées sur les véhicules. 
 
 Il initialise les sliders, ajoute des étiquettes de valeur correspondantes, applique les filtres en fonction des valeurs des sliders et des sélections de l'utilisateur,
 et ajoute des écouteurs d'événements pour détecter les changements dans les filtres et les sliders, et appliquer les filtres en conséquence.
