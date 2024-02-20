@@ -1,4 +1,4 @@
--- Création d'une nouvelle table pour stocker les informations sur les services du garage nommée "services"
+-- Création d'une nouvelle table pour stocker les informations sur les services du garage nommée "services" 
 CREATE TABLE services (
   -- Un identifiant unique pour chaque service, qui s'incrémente automatiquement.
   -- Ce champ est essentiel pour assurer l'unicité de chaque enregistrement de service.
