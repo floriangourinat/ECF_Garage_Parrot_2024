@@ -79,6 +79,8 @@ try {
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
                         <li><a href="services.php">Services</a></li>
+                        <li><a href="contact.php">Nous contacter</a></li>
+                        <li><a href="submit_comment.php">Donnez votre avis</a></li>
                         <li><a href="vehicles.php">Nos véhicules d'occasion</a></li>
                         <li><a href="admin.php">Espace administrateur</a></li>
                     </ul>
