@@ -1,4 +1,4 @@
--- Création d'une nouvelle table pour stocker les informations sur les véhicules d'occasions du garage nommée "vehicles"
+-- Création d'une nouvelle table pour stocker les informations sur les véhicules d'occasions du garage nommée "vehicles" 
 CREATE TABLE vehicles (
   -- Un identifiant unique pour chaque véhicule, qui s'incrémente automatiquement.
   -- Ce champ est essentiel pour assurer l'unicité de chaque enregistrement de véhicule.
