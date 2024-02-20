@@ -5,7 +5,7 @@ require_once 'includes/db.php';
 $error_message = '';
 $success_message = '';
 
-// Vérifie si le formulaire a été soumis
+// Vérifie si le formulaire a été soumis 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $firstname = trim($_POST['firstname']);
     $lastname = trim($_POST['lastname']);
