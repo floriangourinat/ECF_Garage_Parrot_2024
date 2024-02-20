@@ -152,6 +152,7 @@ require_once 'includes/header.php';
                                         <div class="card-body">
                                             <h5 class="card-title"><?php echo htmlspecialchars($vehicle['brand'] . ' ' . $vehicle['model']); ?></h5>
                                             <p class="card-text">Année : <?php echo htmlspecialchars($vehicle['year']); ?></p>
+                                            <p class="card-text">Kilométrage : <?php echo htmlspecialchars($vehicle['mileage']); ?></p>
                                             <p class="card-text">Prix : <?php echo htmlspecialchars(number_format($vehicle['price'], 2)); ?> €</p>
                                             <a href="vehicle_details.php?id=<?php echo $vehicle['id']; ?>" class="btn btn-primary">Voir les détails</a>
                                         </div>
