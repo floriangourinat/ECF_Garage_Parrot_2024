@@ -5,7 +5,7 @@ require_once 'includes/db.php';
 $error_message = '';
 $success_message = '';
 
-// Récupère les données des services depuis la base de données
+// Récupère les données des services depuis la base de données 
 try {
     $stmt = $conn->query("SELECT * FROM services");
     $services = $stmt->fetchAll();
