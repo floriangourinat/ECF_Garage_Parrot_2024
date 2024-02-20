@@ -3,7 +3,7 @@ session_start();
 require_once 'includes/db.php';
 
 
-// Vérifie si l'utilisateur est connecté
+// Vérifie si l'utilisateur est connecté 
 if (!isset($_SESSION['user_id'])) {
     header('Location: user/login.php'); // Redirige vers la page de connexion
     exit;
