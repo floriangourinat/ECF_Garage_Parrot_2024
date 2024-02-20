@@ -11,7 +11,7 @@ $error_message = '';
 $success_message = '';
 $user = null;
 
-// Récupère l'utilisateur à modifier
+// Récupère l'utilisateur à modifier 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
     $id = $_GET['id'];
     $stmt = $conn->prepare("SELECT * FROM users WHERE id = ?");
