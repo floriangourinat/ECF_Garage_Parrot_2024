@@ -1,4 +1,4 @@
-// Initialisation de ScrollReveal avec des options spécifiques pour différents types d'éléments
+// Initialisation de ScrollReveal avec des options spécifiques pour différents types d'éléments 
 
 
 // Révélation des éléments avec la classe 'scroll-top' en provenance du haut
