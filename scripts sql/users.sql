@@ -1,4 +1,4 @@
--- Création d'une nouvelle table pour stocker les informations des utilisateurs admin et employés 
+-- Création d'une nouvelle table pour stocker les informations des utilisateurs admin et employés  
 CREATE TABLE users (
   -- Un identifiant unique pour chaque utilisateur, qui s'incrémente automatiquement.
   -- Ce champ est essentiel pour assurer l'unicité de chaque enregistrement d'utilisateur.
