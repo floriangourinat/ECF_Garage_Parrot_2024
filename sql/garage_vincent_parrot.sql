@@ -3,8 +3,13 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
 --
--- Base de données : `garage_vincent_parrot` 
+-- Base de données : `garage_vincent_parrot`
 --
 
 -- --------------------------------------------------------
@@ -25,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
   `submitted_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_visitor_id` (`visitor_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Déchargement des données de la table `comments`
@@ -36,7 +41,10 @@ INSERT INTO `comments` (`id`, `visitor_id`, `firstname`, `lastname`, `content`, 
 (49, 58, 'Sophie', 'Tremblay', 'Excellent service client! Ils ont réparé ma voiture rapidement et à un prix raisonnable.', 1, 5, '2024-02-17 18:00:28'),
 (50, 59, 'Pierre', 'Lefebvre', 'J\'ai eu quelques problèmes mineurs avec la réparation, mais l\'équipe du garage a été très réactive pour les résoudre.', 1, 4, '2024-02-17 18:00:59'),
 (51, 60, 'Isabelle', 'Gagnon', 'La réparation a pris plus de temps que prévu, mais le résultat final était satisfaisant.', 1, 3, '2024-02-17 18:01:44'),
-(63, 115, 'Jeanne', 'Berry', 'Service exécrable et personnel malpoli ! Ne venez pas dans ce garage', 0, 1, '2024-02-19 22:11:10');
+(63, 115, 'Jeanne', 'Berry', 'Service exécrable et personnel malpoli ! Ne venez pas dans ce garage', 0, 1, '2024-02-19 22:11:10'),
+(64, 116, 'Jeanne', 'Berry', 'Service exécrable et personnel malpoli ! Ne venez pas dans ce garage', 0, 1, '2024-02-19 23:24:24'),
+(65, 117, 'Jeanne', 'Berry', 'Service exécrable et personnel malpoli ! Ne venez pas dans ce garage', 0, 1, '2024-02-19 23:25:07'),
+(66, 118, 'Jeanne', 'Berry', 'Service exécrable et personnel malpoli ! Ne venez pas dans ce garage', 0, 1, '2024-02-19 23:25:53');
 
 -- --------------------------------------------------------
 
@@ -207,7 +215,7 @@ INSERT INTO `vehicles` (`id`, `brand`, `model`, `year`, `mileage`, `price`, `con
 (68, 'Renault', 'Megane IV', 2018, 113000, 13000.00, 'Bon état', 5, 'Automatique', 'Diesel', '3.5 L', 0, 0, '0', '0', 1, 5, 'Noir', '../uploads/image_2024-02-15_174332523.png', '2024-02-15 16:43:33'),
 (69, 'Fiat', '500 III', 2023, 3000, 29000.00, 'Comme neuf', 3, 'Automatique', 'Electrique rechargeable', '14 kWh', 1, 0, '0', '0', 1, 3, 'Noir', '../uploads/image_2024-02-15_174545389.png', '2024-02-15 16:45:46'),
 (70, 'Peugeot', '308 II phase 2', 2018, 70000, 13000.00, 'Très bon état', 7, 'Manuelle', 'Essence', '6.7 L', 0, 0, '0', '1', 0, 5, 'Gris', '../uploads/image_2024-02-15_174952757.png', '2024-02-15 16:52:12'),
-(71, 'Audi', 'Q2', 2019, 62000, 26000.00, 'Très bon état', 6, 'Automatique', 'Essence', '5.3 L', 1, 0, '1', '0', 1, 5, 'Gris', '../uploads/image_2024-02-15_175529086.png', '2024-02-15 16:55:30'),
+(71, 'Audi', 'Q2', 2019, 62000, 26000.00, 'Très bon état', 6, 'Automatique', 'Essence', '5.3 L', 1, 0, '1', '0', 1, 5, 'Gris', '../uploads/image_2024-02-15_175529086.png', '2024-02-15 16:55:30');
 
 -- --------------------------------------------------------
 
@@ -222,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `visitors` (
   `lastname` varchar(255) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=116 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=119 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Déchargement des données de la table `visitors`
@@ -308,7 +316,10 @@ INSERT INTO `visitors` (`id`, `firstname`, `lastname`, `email`) VALUES
 (112, 'Jean', 'Jacques', 'jean.jacques@test.fr'),
 (113, 'Jean', 'Jacques', 'jean.jacques@test.fr'),
 (114, 'Paul', 'Louis', 'paul.louis@test.fr'),
-(115, 'Jeanne', 'Berry', 'jeanne.berry@test.fr');
+(115, 'Jeanne', 'Berry', 'jeanne.berry@test.fr'),
+(116, 'Jeanne', 'Berry', 'jeanne.berry@test.fr'),
+(117, 'Jeanne', 'Berry', 'jeanne.berry@test.fr'),
+(118, 'Jeanne', 'Berry', 'jeanne.berry@test.fr');
 
 --
 -- Contraintes pour les tables déchargées
@@ -327,3 +338,6 @@ ALTER TABLE `contacts`
   ADD CONSTRAINT `contacts_ibfk_1` FOREIGN KEY (`visitor_id`) REFERENCES `visitors` (`id`);
 COMMIT;
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
