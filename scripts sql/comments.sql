@@ -1,4 +1,4 @@
--- Création d'une nouvelle table pour les avis clients nommée "comments"
+-- Création d'une nouvelle table pour les avis clients nommée "comments" 
 CREATE TABLE comments (
   -- Un identifiant unique pour chaque commentaire, qui s'incrémente automatiquement
   id INT(11) NOT NULL AUTO_INCREMENT,
