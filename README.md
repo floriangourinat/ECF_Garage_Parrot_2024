@@ -11,7 +11,7 @@
 
 - Documentation technique du projet : "https://drive.google.com/file/d/1AlJHagOUol7i5R33wkIFoL_xFqYrWoJW/view"
 
-- Scripts SQL : "https://drive.google.com/file/d/1Mz6LxqrxqiowkjsfDUCn3hCOF0oKy5OD/view"
+- Scripts SQL : "https://drive.google.com/file/d/1dwkdck_c9OBstk6tj5uGAm3ah6hklhc0/view"
 
 - Manuel d'utilisation : "https://drive.google.com/file/d/14Q8kqwO-tzM7qyx7XY1Ox-g8GCocdFyd/view"
 
