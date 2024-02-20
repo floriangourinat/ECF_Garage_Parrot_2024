@@ -1,0 +1,73 @@
+/* Styles pour la barre de navigation */
+.navbar {
+    padding: 1 rem 0;
+  }
+  
+.navbar-nav {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-brand {
+  flex-grow: 0;
+}
+
+/* Styles personnalisés pour l'en-tête */
+.navbar-dark {
+    text-align: center;
+    background-color: #000 !important;
+}
+
+/* Style des liens de navigation */
+.navbar-dark .navbar-nav .nav-link {
+    margin-right: 40px;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fdc70a;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Ajuste le dernier élément pour éviter un espace supplémentaire à la fin */
+.navbar-nav .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0D6EFD;
+    text-decoration: none;
+}
+
+/* Style pour le logo dans la barre de navigation */
+.navbar-brand img {
+    height: 250px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 200px;
+  }
+
+  /* Assure une meilleure visibilité et accessibilité du bouton hamburger */
+  .navbar-toggler {
+    border-color: rgba(255,255,255,0.1);
+    color: #fdc70a;
+  }
+
+  /* Modifie la taille et l'espacement des liens dans le menu déroulant pour les rendre plus accessibles */
+  .navbar-nav .nav-link {
+    font-size: 1em; 
+    margin-right: 0;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Style pour le menu déroulant affiché sur mobile */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  /* Augmente l'espacement entre les éléments du menu déroulant pour une meilleure accessibilité */
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+}

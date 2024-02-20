@@ -1,0 +1,143 @@
+/* Styles pour le footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+.footer-contact,
+.footer-hours,
+.footer-links {
+margin-bottom: 1rem;
+}
+
+.footer h3,
+.footer h4 {
+color: #fdc70a;
+}
+
+.footer ul {
+list-style: none;
+padding: 0;
+}
+
+.footer li {
+padding: 0.25rem 0;
+}
+
+.footer li a {
+color: #fdc70a;
+text-decoration: none;
+}
+
+.footer li a:hover {
+text-decoration: underline;
+}
+
+.footer .text-center p {
+margin-top: 1rem;
+color: #fff;
+}
+
+.footer-logo {
+max-width: 100px;
+height: auto;
+display: block;
+margin: -60px auto 1rem auto;
+}
+
+/* Style pour le footer sur tous les appareils */
+.footer-contact {
+margin-bottom: 1rem;
+}
+
+/* Style pour le container de l'iframe de la map */
+.map-iframe-container {
+margin-top: 1rem;
+}
+
+/* Style de l'iframe pour mobile */
+@media (max-width: 768px) {
+.map-iframe-container iframe {
+    width: 100%;
+    height: 200px;
+}
+}
+
+.footer .container {
+max-width: 1140px;
+margin: auto;
+}
+
+.footer-logo {
+max-width: 250px;
+object-fit: contain; 
+margin-bottom: -50px; 
+}
+
+.footer-contact,
+.footer-hours,
+.footer-links {
+text-align: center;
+}
+
+
+.footer.row {
+display: flex;
+flex-direction: row;
+justify-content: center; 
+align-items: center;
+}
+
+.map-iframe-container iframe {
+width: 100%; 
+height: 200px;
+border: none;
+}
+
+/* Centrage des liens sociaux */
+.footer-social-links {
+text-align: center;
+padding: 1rem 0;
+}
+
+/* Styles des liens sociaux */
+.footer-social-links .social-link {
+display: inline-block;
+margin: 0 10px;
+color: #fdc70a;
+font-size: 1.5rem;
+transition: color 0.3s ease;
+}
+
+.footer-social-links .social-link:hover {
+color: #fff;
+}
+
+/* Styles pour le bas du pied de page */
+.footer-bottom {
+background: #333;
+color: #fff;
+padding: 1rem 0;
+text-align: center;
+}
+
+/* Assurez-vous que les droits d'auteur sont centrés */
+.footer-bottom p {
+margin: 0;
+}
+
+/* Bouton de retour en haut */
+.back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+z-index: 100;
+background: #000;
+border-radius: 30px;
+}
+
+.back-to-top .fa-arrow-up{
+color: #fdc70a;
+}

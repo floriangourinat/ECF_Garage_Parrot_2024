@@ -1,0 +1,345 @@
+/* Réinitialisation des marges et des rembourrages pour le corps et le HTML */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour la section de bienvenue */
+.welcome-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Styles pour la vidéo de fond */
+.welcome-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.welcome-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Boutons de la section de bienvenue */
+.welcome-text .btn {
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    padding: 20px;
+  }
+
+  .welcome-text h1 {
+      font-size: 2rem;
+  }
+
+  .welcome-text p {
+      font-size: 1rem;
+  }
+
+  .welcome-text .btn {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+  }
+}
+
+/* Styles pour la section à propos du garage */
+.about-garage {
+  background-image: url('../img/about_garage.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  color: #fdc70a;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-garage p {
+  font-size: 1.5em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Pour rendre le texte plus visible */
+.about-garage h2, .about-garage p {
+  opacity: 1;
+}
+
+.why-choose-us {
+  padding: 2rem 0;
+}
+
+.why-choose-us .container {
+  background-color: 	#DCDCDC;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.why-choose-us p {
+  font-size: 1.25rem;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 1rem;
+}
+
+.why-choose-us .col-md-6 img {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustements pour les écrans plus petits */
+@media (max-width: 768px) {
+  .why-choose-us .container {
+      padding: 1rem;
+  }
+  .why-choose-us h2 {
+      font-size: 2rem;
+  }
+  .why-choose-us p {
+      font-size: 1rem;
+  }
+}
+
+/* Styles pour les sections de contenu principal */
+.services,
+.why-choose-us,
+.contact-us {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les sous-titres */
+h3 {
+  color: #000;
+  font-size: 1.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style pour les listes dans les sections */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styles pour la section des Services Offerts */
+.services {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Style pour le titre */
+.services h3 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 1rem;
+}
+
+/* Style pour la liste des services */
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style pour chaque service */
+.services li {
+  margin-bottom: 1.5rem;
+}
+
+/* Style pour les titres de service */
+.services li strong {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Style pour le texte des services */
+.services li p {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.vehicle-image {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.vehicle-card .btn-primary {
+  background-color: #000;
+  color: #fdc70a;
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.vehicle-card .btn-primary:hover {
+  background-color: #fdc70a;
+  color: #000;
+}
+
+/* Styles pour le bouton secondaire "Voir nos autres véhicules" */
+.btn-secondary {
+  background-color: #000;
+  color: #fdc70a;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #fdc70a;
+  color: #000;
+}
+
+/*Chiffres défilants*/
+.info-card {
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  text-align: center;
+  background-color: black;
+}
+
+.info-card h2 {
+  font-size: 1.25rem;
+  color: #fdc70a;
+  margin-bottom: 0.5rem;
+}
+
+.info-card .number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fdc70a;
+}
+
+
+
+/* Styles pour les flèches du carrousel et les étoiles */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #ffc107;
+    font-size: 30px;
+}
+
+.carousel-rating .fas.fa-star {
+    color: #ffc107;
+}
+
+/* Ajout d'un fond pour le carousel */
+.carousel {
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 20px;
+}
+
+.carousel-author {
+  font-weight: bold;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.carousel-item {
+  background-color: #DCDCDC;
+  border-radius: 20px;
+  padding: 50px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.75s ease, transform 0.75s ease;
+  visibility: hidden;
+}
+
+.carousel-item.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+  position: absolute;
+  top: 0;
+  visibility: visible;
+}

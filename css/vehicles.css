@@ -1,0 +1,158 @@
+/* Styles spécifiques pour le filtrage des véhicules */
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.filter-left, .filter-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.filter-left .custom-select{
+    width: 250px;
+}
+.filter-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+.filter-right .slider-container {
+    flex-grow: 1;
+    text-align: center;
+}
+.filter-right .slider-container .noUi-connect {
+    background: #007bff;
+}
+.filter-right .slider-container .noUi-handle {
+    border: 2px solid #007bff;
+}
+.filter-right select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+.custom-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+.slider-container {
+    margin-right: 20px; 
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-left,
+    .filter-right {
+        width: 100%; 
+        margin-left: 0; 
+        margin-bottom: 10px;
+    }
+
+    .slider-container {
+        margin-right: 0; 
+        margin-left: 0;
+    }
+}
+
+/* Styles spécifiques pour la section des véhicules */
+.vehicles-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.vehicles-section h2{
+    text-align: center;
+}
+
+.vehicles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vehicle-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+}
+
+/* Ajustement pour aligner les images des véhicules et définir une taille */
+.vehicle-card img {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.vehicle-card h3 {
+    margin-top: 10px;
+}
+
+.vehicle-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.vehicle-card .btn-primary {
+    background-color: #000;
+    color: #fdc70a;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.vehicle-card .btn-primary:hover {
+    background-color: #fdc70a;
+    color: #000;
+}
+
+/* Responsive Design pour les cartes de véhicules */
+@media (max-width: 1500px) {
+    .vehicle-card {
+        width: calc(50% - 20px);
+    }
+
+    .vehicle-card img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vehicle-card {
+        width: 100%;
+    }
+
+    .vehicle-card img {
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .vehicle-card {
+        width: 100%;
+    }
+
+    .vehicle-card img {
+        width: 400px;
+    }
+}
