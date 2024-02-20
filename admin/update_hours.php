@@ -2,7 +2,7 @@
 session_start();
 require_once '../includes/db.php'; 
 
-// Vérification de l'authentification et des autorisations
+// Vérification de l'authentification et des autorisations 
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
     header('Location: ../user/login.php');
     exit;
