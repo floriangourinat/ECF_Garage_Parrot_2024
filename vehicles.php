@@ -1,7 +1,7 @@
 <?php
 require_once 'includes/db.php';
 
-// Tente de récupérer les véhicules depuis la base de données
+// Tente de récupérer les véhicules depuis la base de données 
 try {
     $stmt = $conn->prepare("SELECT * FROM vehicles");
     $stmt->execute();
