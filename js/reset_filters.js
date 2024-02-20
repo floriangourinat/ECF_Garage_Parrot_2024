@@ -1,4 +1,4 @@
-// Fonction pour réinitialiser tous les filtres de recherche à leurs valeurs par défaut
+// Fonction pour réinitialiser tous les filtres de recherche à leurs valeurs par défaut 
 function resetFilters() {
     // Réinitialise les éléments select à la valeur par défaut
     document.getElementById('filterMake').value = '';
