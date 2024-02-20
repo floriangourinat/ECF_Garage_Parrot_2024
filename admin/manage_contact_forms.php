@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id']) || ($_SESSION['role'] !== 'admin' && $_SESSION[
     exit;
 }
 
-// Traitement de la suppression si le formulaire est soumis
+// Traitement de la suppression si le formulaire est soumis 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_contact'])) {
     $contact_id = $_POST['contact_id'];
     
