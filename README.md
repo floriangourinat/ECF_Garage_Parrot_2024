@@ -7,7 +7,7 @@
 
 - Trello : https://trello.com/b/8QGl5yJ8/ecf
 
-- Charte graphique et des maquettes : https://drive.google.com/file/d/1f0kKS21hvA_luZdAzwD9yshm72foZ3aE/view"
+- Charte graphique et maquettes : https://drive.google.com/file/d/1f0kKS21hvA_luZdAzwD9yshm72foZ3aE/view"
 
 - Documentation technique du projet : "https://drive.google.com/file/d/1AlJHagOUol7i5R33wkIFoL_xFqYrWoJW/view"
 
