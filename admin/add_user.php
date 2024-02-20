@@ -4,7 +4,7 @@ require_once '../includes/db.php';
 
 // Vérifie si l'utilisateur est connecté et a le rôle 'admin'
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
-    header('Location: ../user/login.php'); // Redirige vers la page de connexion si l'utilisateur n'est pas connecté ou n'a pas le bon rôle
+    header('Location: ../user/login.php'); // Redirige vers la page de connexion si l'utilisateur n'est pas connecté ou n'a pas le bon rôle 
     exit;
 }
 
