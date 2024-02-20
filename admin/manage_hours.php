@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ]);
             } catch (PDOException $e) {
                 $error_message = "Erreur lors de la mise à jour des horaires pour $day : " . $e->getMessage();
-                break; // Sortie de la boucle en cas d'erreur
+                break; // Sortie de la boucle en cas d'erreur 
             }
         }
     }
