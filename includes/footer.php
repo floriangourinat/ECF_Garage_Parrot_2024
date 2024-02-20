@@ -1,7 +1,7 @@
 <?php
 require_once 'db.php';
 
-// Récupération des horaires de la base de données de manière sécurisée
+// Récupération des horaires de la base de données de manière sécurisée 
 try {
     $stmt = $conn->query("SELECT * FROM schedules ORDER BY FIELD(day, 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche')");
     $hours = $stmt->fetchAll(PDO::FETCH_ASSOC); // Utilisation de FETCH_ASSOC pour récupérer un tableau associatif
