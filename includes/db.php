@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost'; // adresse du serveur de base de données
+$host = 'localhost'; // adresse du serveur de base de données 
 $dbname = 'garage_vincent_parrot'; // le nom de la base de données
 $username = 'root'; // nom d'utilisateur pour la base de données
 $password = 'admin'; // mot de passe pour la base de données
