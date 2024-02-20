@@ -3,17 +3,17 @@
 
 ## Liens importants du projet
 
-- Site en ligne : https://garagevparrot31.fr
+- Site en ligne : "https://garagevparrot31.fr
 
-- Trello : https://trello.com/b/8QGl5yJ8/ecf
+- Trello : "https://trello.com/b/8QGl5yJ8/ecf
 
-- Charte graphique et maquettes : https://drive.google.com/file/d/1f0kKS21hvA_luZdAzwD9yshm72foZ3aE/view"
+- Charte graphique et maquettes : "https://drive.google.com/file/d/1f0kKS21hvA_luZdAzwD9yshm72foZ3aE/view"
 
 - Documentation technique du projet : "https://drive.google.com/file/d/1AlJHagOUol7i5R33wkIFoL_xFqYrWoJW/view"
 
 - Scripts SQL : "https://drive.google.com/file/d/1Mz6LxqrxqiowkjsfDUCn3hCOF0oKy5OD/view"
 
-- Manuel d'utilisation : https://drive.google.com/file/d/14Q8kqwO-tzM7qyx7XY1Ox-g8GCocdFyd/view"
+- Manuel d'utilisation : "https://drive.google.com/file/d/14Q8kqwO-tzM7qyx7XY1Ox-g8GCocdFyd/view"
 
 ## Installation en local
 
