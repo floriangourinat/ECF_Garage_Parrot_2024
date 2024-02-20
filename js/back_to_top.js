@@ -1,6 +1,6 @@
 // Initialisation de "Back to Top" qui permet aux utilisateurs de faire défiler la page jusqu'en haut de manière fluide
 
-// Attend que le contenu de la page soit complètement chargé avant d'exécuter le code
+// Attend que le contenu de la page soit complètement chargé avant d'exécuter le code 
 document.addEventListener('DOMContentLoaded', (event) => {
     // Fonction pour faire défiler la page jusqu'en haut
     function scrollToTop() {
