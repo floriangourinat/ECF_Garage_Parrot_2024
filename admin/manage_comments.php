@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id']) || ($_SESSION['role'] !== 'admin' && $_SESSION[
     exit;
 }
 
-// Initialise les variables pour stocker les données du formulaire
+// Initialise les variables pour stocker les données du formulaire 
 $firstname = $lastname = $email = $content = $rating = '';
 $errors = [];
 
