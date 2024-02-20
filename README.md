@@ -56,9 +56,9 @@
 
 - Assurez-vous que WampServer est en cours d'exécution et que les services Apache et MySQL sont démarrés.
 - Placez les fichiers du projet dans le répertoire www de votre installation WampServer. Par défaut, ce répertoire se trouve dans le dossier d'installation de WampServer (généralement C:\wamp64\www sous Windows).
-- Dans votre navigateur web, accédez à l'URL http://localhost/votre_dossier_de_projet pour charger votre projet, avec le nom de votre dossier dans l'URL.
+- Dans votre navigateur web, accédez à l'URL http://localhost/votre_dossier pour charger votre projet, avec le nom de votre dossier dans l'URL.
 
 6. Tester le projet :
 
-- Vous devriez maintenant pouvoir accéder au projet localement à l'adresse http://localhost/votre_dossier_de_projet
+- Vous devriez maintenant pouvoir accéder au projet localement à l'adresse http://localhost/votre_dossier
 - Dès à présent, vous pouvez utiliser le manuel d'utilisation inclus dans les liens pour tester le site et ses fonctionnalités.
