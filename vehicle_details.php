@@ -5,7 +5,7 @@ require_once 'includes/db.php';
 $error_message = '';
 $success_message = '';
 
-// Récupère l'ID du véhicule depuis l'URL
+// Récupère l'ID du véhicule depuis l'URL 
 $vehicleId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 $vehicle = null;
 
