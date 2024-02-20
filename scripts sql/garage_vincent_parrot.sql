@@ -1,4 +1,4 @@
--- Création de la base de données avec le nom spécifique 'garage_vincent_parrot', pour bien identifier la base de données du garage
+-- Création de la base de données avec le nom spécifique 'garage_vincent_parrot', pour bien identifier la base de données du garage 
 CREATE DATABASE `garage_vincent_parrot`
 CHARACTER SET latin1
 COLLATE latin1_swedish_ci;
