@@ -1,4 +1,4 @@
--- Création ou mise à jour de la table pour stocker les informations sur les visiteurs du garage nommée "visitors"
+-- Création ou mise à jour de la table pour stocker les informations sur les visiteurs du garage nommée "visitors" 
 CREATE TABLE visitors (
   -- Un identifiant unique pour chaque visiteur, qui s'incrémente automatiquement.
   -- Ce champ est essentiel pour assurer l'unicité de chaque enregistrement de visiteur.
