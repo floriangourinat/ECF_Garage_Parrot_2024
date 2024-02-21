@@ -2,6 +2,7 @@
 session_start();
 require_once '../includes/db.php';
 
+// Vérification de l'authentification et des autorisations
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
     header('Location: ../user/login.php');
     exit;
@@ -12,6 +13,7 @@ $success_message = '';
 $schedule_data = [];
 
 try {
+    // Récupération des horaires depuis la base de données
     $query = "SELECT * FROM schedules ORDER BY id";
     $stmt = $conn->prepare($query);
     $stmt->execute();
@@ -27,6 +29,7 @@ try {
     $error_message = "Erreur lors de la récupération des horaires : " . $e->getMessage();
 }
 
+// Traitement des données envoyées en POST pour la mise à jour des horaires
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($schedule_data as $day => &$times) {
         if (isset($_POST[$day . '_morning_opening_hour']) && isset($_POST[$day . '_morning_closing_hour']) &&
@@ -36,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $times['afternoon_opening_hour'] = $_POST[$day . '_afternoon_opening_hour'];
             $times['afternoon_closing_hour'] = $_POST[$day . '_afternoon_closing_hour'];
             try {
+                // Préparation et exécution de la requête de mise à jour des horaires
                 $update_query = "UPDATE schedules SET 
                     morning_opening_hour = :morning_opening_hour, 
                     morning_closing_hour = :morning_closing_hour,
