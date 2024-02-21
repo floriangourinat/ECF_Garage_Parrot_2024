@@ -1,4 +1,4 @@
-//Initialisation du script js pour faire fonctionner le carousel d'avis clients sur la page d'accueil
+//Initialisation du script js pour faire fonctionner le carousel d'avis clients sur la page d'accueil 
 
 // Attend que le contenu du DOM soit entièrement chargé avant d'exécuter le script
 document.addEventListener('DOMContentLoaded', function () {
