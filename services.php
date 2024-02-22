@@ -1,7 +1,7 @@
 <?php
 include 'includes/db.php';
 
-// Récupère les services depuis la base de données
+// Récupère les services depuis la base de données 
 $stmt = $conn->query("SELECT * FROM services");
 $services = $stmt->fetchAll();
 
