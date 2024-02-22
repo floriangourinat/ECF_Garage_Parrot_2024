@@ -1,4 +1,4 @@
-<!-- Fichier pour initialiser le compte administrateur dans la base de données nous permettant de se connecter à login.php, à supprimer après création même si la sécurité semble bonne sur ce code -->
+<!-- Fichier pour initialiser le compte administrateur dans la base de données nous permettant de se connecter à login.php, à supprimer après création même si la sécurité semble bonne sur ce code --> 
 
 <?php
 require_once 'includes/db.php';
